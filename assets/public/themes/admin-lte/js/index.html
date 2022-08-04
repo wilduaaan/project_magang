@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SPADA Aptisi Jatim - ASOSIASI PERGURUAN TINGGI SWASTA INDONESIA</title>
+	<link rel="icon" href="img/aptisi/APTISI.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400%7CSource+Sans+Pro:700" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	
+	<script>
+		function initialize() {
+			var propertiPeta = {
+			    center : new google.maps.LatLng(-6.133098,106.730680),
+			    zoom:16,
+			    mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+
+			var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+			
+			var marker = new google.maps.Marker({
+			    position: new google.maps.LatLng(-6.133098,106.730680),
+			    map: peta,
+			    animation: google.maps.Animation.BOUNCE
+			});
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+
+<body>
+	<header id="home">
+		<nav id="main-navbar">
+			<div class="container" style="height: 75px">
+				<div class="navbar-brand">
+					<a href="index.html">
+						<img src="img/aptisi/aptisi.png" alt="logo"  class="logo">
+						<div class="logo-text">
+							<h3 style="margin-bottom: 1px">SPADA APTISI JATIM</h3>
+							<h5 class="logos-text">Asosiasi Perguruan Tinggi Swasta Indonesia</h5>
+						</div>
+					</a>
+				</div>
+
+				<div class="navbar-header">
+					<button class="navbar-toggle-btn">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<!--<button class="search-toggle-btn">-->
+					<!--	<i class="fa fa-search"></i>-->
+					<!--</button>-->
+				</div>
+
+				<ul class="navbar-menu nav navbar-nav navbar-right">
+					<li><a href="index.html">Beranda</a></li>
+					<li class="has-dropdown" aria-labelledby="navbarDropdown"><a href="profil.html">Profil</a>
+						<ul class="dropdown">
+							<li><a href="profil.html">Tentang Kami</a></li>
+							<li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+							<li><a href="visimisi.html">Visi dan Misi</a></li>
+							<li><a href="mars-aptisi.html">Mars APTISI</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown" aria-labelledby="navbarDropdown"><a href="#">Informasi</a>
+						<ul class="dropdown">
+							<li><a href="daftar-berita.html">Berita</a></li>
+							<li><a href="daftar-seminar.html">Seminar dan Workshop</a></li>
+							<li><a href="galeri.html">Galeri Foto</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown" aria-labelledby="navbarDropdown"><a href="#">Unduhan</a>
+						<ul class="dropdown">
+							<li><a href="daftar-surat.html">Surat Pengumuman</a></li>
+							<li><a href="daftar-materi-kegiatan.html">Materi Kegiatan</a></li>
+							<li><a href="daftar-mou-loi.html">MoU dan LoI</a></li>
+							<li><a href="daftar-buku.html">Perpustakaan</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown" aria-labelledby="navbarDropdown"><a href="#">Keanggotaan</a>
+						<ul class="dropdown">
+							<li><a href="prosedur.html">Prosedur Pendaftaran</a></li>
+							<li><a href="registrasi.html">Pendaftaran</a></li>
+							<li><a href="update.html">Ubah Profil</a></li>
+						</ul>
+					</li>
+					<!-- <li class="has-dropdown"><a href="#">Region</a>
+						<ul class="dropdown">
+							<li><a href="">Wilayah-I A Sumatera Utara</a></li>
+							<li><a href="">Wilayah-I B Nanggroe Aceh Darussalam</a></li>
+							<li><a href="">Wilayah-II A Sumatera Selatan</a></li>
+							<li><a href="">Wilayah-II B Lampung</a></li>
+							<li><a href="">Wilayah-II C Bengkulu</a></li>
+							<li><a href="">Wilayah-III DKI Jakarta</a></li>
+							<li><a href="">Wilayah-IV A Jawa Barat</a></li>
+							<li><a href="">Wilayah-IV B Banten</a></li>
+							<li><a href="">Wilayah-V Daerah Istimewa Yogyakarta</a></li>
+							<li><a href="">Wilayah-VI Jawa Tengah</a></li>
+							<li><a href="">Wilayah-VII A Jawa Timur</a></li>
+							<li><a href="">Wilayah-VII B Bali</a></li>
+							<li><a href="">Wilayah-VIII A Nusa Tenggara Timur</a></li>
+							<li><a href="">Wilayah-VIII B Nusa Tenggara Barat</a></li>
+							<li><a href="">Wilayah-IX A Sulawesi</a></li>
+							<li><a href="">Wilayah-IX B Manado dan Gorontalo</a></li>
+							<li><a href="">Wilayah-X A Sumatera Barat</a></li>
+							<li><a href="">Wilayah-X B Riau</a></li>
+							<li><a href="">Wilayah-X C Jambi</a></li>
+							<li><a href="">Wilayah-X D Kepulauan Riau</a></li>
+							<li><a href="">Wilayah-XI A Kalimantan</a></li>
+							<li><a href="">Wilayah-XI B Kalimantan Timur</a></li>
+							<li><a href="">Wilayah-XII A Ambon dan Ternate</a></li>
+							<li><a href="">Wilayah-XII B Irian Jaya</a></li>
+							<li><a href="">Wilayah-XII C Papua Barat</a></li>
+						</ul>
+					</li> -->
+					<li><a href="kontak.html">Kontak</a></li>
+					 <!--<li class="nav-item dropdown">-->
+      <!--                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+      <!--                    Dropdown-->
+      <!--                  </a>-->
+      <!--                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+      <!--                    <a class="dropdown-item" href="#">Action</a>-->
+      <!--                    <a class="dropdown-item" href="#">Another action</a>-->
+      <!--                    <div class="dropdown-divider"></div>-->
+      <!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+      <!--                  </div>-->
+      <!--                </li>-->
+				</ul>
+			</div>
+		</nav>
+
+		<div id="home-owl" class="owl-carousel owl-theme">
+			<div class="home-item">
+				<div class="section-bg" style="background-image: url(img/spada.jpg);"></div>
+
+				<div class="home"> 	
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 transpar">
+								<div class="home-content">
+									<h1>SPADA Aptisi Jatim</h1>
+									<p class="lead">Selamat datang di halaman website resmi Sistem Pembelajaran Daring Asosiasi Perguruan Tinggi Swasta Indonesia - APTISI Jawa Timur.</p>
+									<a href="profil.html" class="primary-button">Profil Kami</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home-item">
+				<div class="section-bg" style="background-image: url(./img/aptisi/slider/bergabung.jpg);"></div>
+
+				<div class="home">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 transpar">
+								<div class="home-content">
+									<h1>Bergabung Bersama Kami</h1>
+									<p class="lead">Asosiasi Perguruan Tinggi Swasta Indonesia (APTISI) mewakili aspirasi lebih dari 3000 Perguruan Tinggi Swasta (PTS) di Indonesia, selain berkomitmen menyusun program-program untuk memajukan PTS dan pendidikan nasional juga memposisikan diri sebagai mitra kritis pemerintah dalam pembangunan bangsa baik yang berkaitan dengan dengan masalah pendidikan maupun masalah sosial kemasyarakat..</p>
+									<a href="prosedur.html" class="primary-button">Bergabung dengan Kami sekarang!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home-item">
+				<div class="section-bg" style="background-image: url(img/aptisi/slider/materi.jpg);"></div>
+
+				<div class="home"> 	
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 transpar">
+								<div class="home-content">
+									<h1>Materi yang Lengkap</h1>
+									<p class="lead">Dapatkan materi - materi Pembelajaran yang telah diberikan secara gratis.</p>
+									<a href="daftar-materi-kegiatan.html" class="primary-button">Materi Kegiatan</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home-item">
+				<div class="section-bg" style="background-image: url(img/aptisi/slider/seminar.jpg);"></div>
+
+				<div class="home"> 	
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 transpar">
+								<div class="home-content">
+									<h1>Seminar dan Workshop</h1>
+									<p class="lead">Ikuti Seminar dan Workshop yang kami adakan untuk mendapatkan materi - materi yang terbaru.</p>
+									<a href="daftar-seminar.html" class="primary-button">Seminar dan Workshop</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="about" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<div class="section-title">
+							<h2 class="title">Selamat Datang di SPADA APTISI JATIM</h2>
+							<p class="sub-title">SPADA APTISI JATIM adalah sebuah Sistem Pembelajaran Daring Asosiasi Perguruan Tinggi Swasta Indonesia bagian Jawa Timur.</p>
+						</div>
+						<div class="about-content">
+							<p>SPADA APTISI JATIM digunakan untuk memberikan informasi tentang file materi SPADA dan foto dokumentasi selama pelaksanaan SPADA.</p>
+							<a href="profil.html" class="primary-button">Baca Lebih lanjut</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about-video">
+							<img src="img/spada.jpg" class="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cta" class="section">
+		<!-- background section -->
+		<div class="section-bg" style="background-image: url(./img/aptisi/slider/bergabung.jpg);" data-stellar-background-ratio="0.5"></div>
+		<!-- /background section -->
+
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- cta content -->
+				<div class="col-md-offset-2 col-md-8 transpare">
+					<div class="cta-content text-center">
+						<h1>Ingin Bergabung bersama Kami?</h1>
+						<p class="lead">Mari Bergabung bersama menjadi Anggota Asosiasi Perguruan Tinggi Swasta Indonesia (APTISI). untuk mendapatkan informasi mengenai Perguruan Tinggi Swasta di seluruh Indonesia seperti Seminar dan Workshop guna membangun Indonesia menjadi semakin lebih Baik</p>
+						<a href="prosedur.html" class="primary-button">Bergabung Sekarang!</a>
+					</div>
+				</div>
+				<!-- /cta content -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<div id="events" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="col-md-8 col-md-offset-2">
+					<div class="section-title text-center">
+						<h2 class="title">Acara</h2>
+						<p class="sub-title">Berikut merupakan acara-acara yang diselenggaran oleh APTISI.</p>
+					</div>
+				</div>
+				<!-- /section title -->
+
+				<!-- event -->
+				<div class="col-md-6">
+					<div class="event">
+						<div class="event-img">
+							<a href="berita1.html">
+								<img src="./img/aptisi/news/1.png" alt="">
+							</a>
+						</div>
+						<div class="event-content">
+							<h3><a href="berita1.html">Kopertis XI Melakukan Dialog Pancasila Bersama Pimpinan PTS SeKalimantan Selatan dalam memperingati Hari Lahir Pancasila 1 Juni 2018.</a></h3>
+							<ul class="event-meta">
+								<li><i class="fa fa-clock-o"></i> 2 Juni, 2018</li>
+								<!-- <li><i class="fa fa-map-marker"></i> 2736 Hinkle Deegan Lake Road</li> -->
+							</ul>
+							<p>Kopertis XI Melakukan Dialog Pancasila dalam memperingati Hari Lahir Pancasila dengan mengangkat tema “Bersatu Berbagi dan Berprestasi” dimana disampaikan oleh Prof Idiannor Mahyudin, pihaknya sudah mulai melakukan Gerakan Gotong Royong Terintegrasi untuk Akreditas (Gentong Terasi). 
+								<a href="berita1.html" id="read">Selanjutnya.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /event -->
+
+				<!-- event -->
+				<div class="col-md-6">
+					<div class="event">
+						<div class="event-img">
+							<a href="berita2.html">
+								<img src="./img/event-2.jpg" alt="">
+							</a>
+						</div>
+						<div class="event-content">
+							<h3><a href="berita2.html">Seminar Nasional Multi Disiplin Ilmu-1</a></h3>
+							<ul class="event-meta">
+								<li><i class="fa fa-clock-o"></i> 6 November, 2017</li>
+								<!-- <li><i class="fa fa-map-marker"></i> 2736 Hinkle Deegan Lake Road</li> -->
+							</ul>
+							<p>Perkembangan teknologi yang semakin pintar membuat konsep smart tidak hanya diterapkan pada berbagai perangkat, tetapi juga pada berbagai sistem atau tatanan. Salah satunya yang mencuat akhir-akhir ini adalah konsep smart city.
+								<a href="berita2.html" id="read">Selanjutnya.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /event -->
+
+				<div class="clearfix visible-md visible-lg"></div>
+
+				<!-- event -->
+				<div class="col-md-6">
+					<div class="event">
+						<div class="event-img">
+							<a href="berita3.html">
+								<img src="./img/aptisi/news/3.jpg" alt="">
+							</a>
+						</div>
+						<div class="event-content">
+							<h3><a href="berita3.html">Membedah Tantangan Jokowi-JK</a></h3>
+							<ul class="event-meta">
+								<li><i class="fa fa-clock-o"></i> 12 Desember, 2017</li>
+								<!-- <li><i class="fa fa-map-marker"></i> 2736 Hinkle Deegan Lake Road</li> -->
+							</ul>
+							<p>Buku ini disusun untuk memetakan serangkaian masalah yang kira-kira akan dihadapi oleh pemerintahan Jokowi-JK. Kata orang bijak, mengetahui masalah adalah setengah jalan dari penyelesaiannya. Dan masalah-masalah itu bersifat teknis kelembagaan, bisa juga karena akibat dari orientasi kebijakan ekonomi politik dari rezim yang berkuasa.
+								<a href="berita3.html" id="read">Selanjutnya.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /event -->
+
+				<!-- event -->
+				<div class="col-md-6">
+					<div class="event">
+						<div class="event-img">
+							<a href="berita4.html">
+								<img src="./img/aptisi/news/4.jpg" alt="">
+							</a>
+						</div>
+						<div class="event-content">
+							<h3><a href="berita4.html">Kampus Harus Tingkatkan Inovasi Dalam Berkompetisi</a></h3>
+							<ul class="event-meta">
+								<li><i class="fa fa-clock-o"></i> 12 Desember, 2017</li>
+								<!-- <li><i class="fa fa-map-marker"></i> 2736 Hinkle Deegan Lake Road</li> -->
+							</ul>
+							<p>Kampus harus melakukan terobosan baru supaya unggul dalam persaingan di era global, yang disebut oleh Mohamad Nasir (Menristekdikti) sebagai era ‘disruptive innovation’. Pada era ini, Perguruan Tinggi harus mampu menciptakan inovasi agar tahan banting dalam berkompetisi.
+								<a href="berita4.html" id="read">Selanjutnya.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /event -->
+
+				<!-- section redirect -->
+				<div class="col-md-8 col-md-offset-2">
+					<div class="section-title text-center">
+						<a href="daftar-berita.html" class="secondary-button causes-donate">Telusuri Lebih Lanjut</a>
+					</div>
+				</div>
+				<!-- /section redirect -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<div id="testimonial" class="section">
+		<!-- background section -->
+		<div class="section-bg" style="background-image: url(./img/aptisi/slider/materi.jpg);" data-stellar-background-ratio="0.5"></div>
+		<!-- /background section -->
+
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- Testimonial owl -->
+				<div class="col-md-12">
+					<div id="testimonial-owl" class="owl-carousel owl-theme">
+						<!-- testimonial -->
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<div class="testimonial-img">
+									<img src="./img/aptisi/testi1.png" alt="">
+								</div>
+								<h3>Prof. Dr. Ir. Idiannor Mahyudin, M.Si</h3>
+								<span>Guru besar Fakultas Perikanan Universitas Lambung Mangkurat.</span>
+							</div>
+							<div class="testimonial-quote">
+								<blockquote>
+									<p>Terima kasih APTISI PUSAT.</p>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /testimonial -->
+
+						<!-- testimonial -->
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<div class="testimonial-img">
+									<img src="./img/aptisi/testi2.jpg" alt="">
+								</div>
+								<h3>Dr. H. Adi Suminto,MH.,M.Si</h3>
+								<span>Dosen di Fakultas Ilmu Hukum dan FISIP di Universitas Satyagama</span>
+							</div>
+							<div class="testimonial-quote">
+								<blockquote>
+									<p>Assalamualaikum Wr. Wb.
+									Mohon kesediannya apabila ada lagi kegiatan PEKERTI dan AA di lingkungan Dosen Kopertis III dan IV kami diberitahukan di Tahun 2018
+									Terima kasih
+									Wassalamualaium Wr. Wb.</p>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /testimonial -->
+
+						<!-- testimonial -->
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<div class="testimonial-img">
+									<img src="./img/aptisi/testi3.jpg" alt="">
+								</div>
+								<h3>Final Grade Calculator</h3>
+								<span>Website Penyedia Layanan Penghitungan Nilai Ulangan</span>
+							</div>
+							<div class="testimonial-quote">
+								<blockquote>
+									<p>All the time i used to read smaller content that as well clear their motive, and that is also happening with this post which I am reading here.</p>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /testimonial -->
+
+						<!-- testimonial -->
+						<!-- <div class="testimonial">
+							<div class="testimonial-meta">
+								<div class="testimonial-img">
+									<img src="./img/avatar-2.jpg" alt="">
+								</div>
+								<h3>John Doe</h3>
+								<span>Volunteer</span>
+							</div>
+							<div class="testimonial-quote">
+								<blockquote>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</blockquote>
+							</div>
+						</div> -->
+						<!-- /testimonial -->
+					</div>
+				</div>
+				<!-- /Testimonial owl -->
+			</div>
+			<!-- /Row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<div id="causes" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- section title -->
+				<div class="col-md-8 col-md-offset-2">
+					<div class="section-title text-center">
+						<h2 class="title">Perpustakaan</h2>
+						<p class="sub-title">Berikut merupakan kumpulan buku-buku maupun jurnal dari anggota APTISI.</p>
+					</div>
+				</div>
+				<!-- section title -->
+
+				<!-- causes -->
+				<div class="col-md-4">
+					<div class="causes">
+						<div class="causes-img">
+							<a href="buku1.html">
+								<img src="./img/aptisi/library/1.jpg" alt="">
+							</a>
+						</div>
+						<!-- <div class="causes-progress">
+							<div class="causes-progress-bar">
+								<div style="width: 87%;">
+									<span>87%</span>
+								</div>
+							</div>
+							<div>
+								<span class="causes-raised">Raised: <strong>52.000$</strong></span>
+								<span class="causes-goal">Goal: <strong>90.000$</strong></span>
+							</div>
+						</div> -->
+						<div class="causes-content">
+							<div style="height: 130px">
+								<h3><a href="buku1.html">Buku Panduan Pengusulan Program Penelitian & Kisi-Kisi Penelitian DRPM DIKTI Edisi XII 2018</a></h3>
+							</div>
+							<a href="buku1.html" class="primary-button causes-donate">Unduh Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<!-- /causes -->
+
+				<!-- causes -->
+				<div class="col-md-4">
+					<div class="causes">
+						<div class="causes-img">
+							<a href="buku1.html">
+								<img src="./img/aptisi/library/2.png" alt="">
+							</a>
+						</div>
+						<!-- <div class="causes-progress">
+							<div class="causes-progress-bar">
+								<div style="width: 87%;">
+									<span>87%</span>
+								</div>
+							</div>
+							<div>
+								<span class="causes-raised">Raised: <strong>52.000$</strong></span>
+								<span class="causes-goal">Goal: <strong>90.000$</strong></span>
+							</div>
+						</div> -->
+						<div class="causes-content">
+							<div style="height: 130px">
+								<h3><a href="buku1.html">Agent-Based Model and Complexity Science in the Age of Geospatial Big Data</a></h3>
+							</div>
+							<a href="buku1.html" class="primary-button causes-donate">Unduh Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<!-- /causes -->
+
+				<!-- causes -->
+				<div class="col-md-4">
+					<div class="causes">
+						<div class="causes-img">
+							<a href="buku1.html">
+								<img src="./img/aptisi/library/3.png" alt="">
+							</a>
+						</div>
+						<!-- <div class="causes-progress">
+							<div class="causes-progress-bar">
+								<div style="width: 87%;">
+									<span>87%</span>
+								</div>
+							</div>
+							<div>
+								<span class="causes-raised">Raised: <strong>52.000$</strong></span>
+								<span class="causes-goal">Goal: <strong>90.000$</strong></span>
+							</div>
+						</div> -->
+						<div>
+							<div style="height: 130px">
+								<h3><a href="buku1.html">Big Data Techniques and Technologies in Geoinformatics</a></h3>
+							</div>
+							<a href="buku1.html" class="primary-button causes-donate">Unduh Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<!-- /causes -->
+
+				<div class="clearfix visible-md visible-lg"></div>
+
+				<!-- causes -->
+				<div class="col-md-4">
+					<div class="causes">
+						<div class="causes-img">
+							<a href="buku1.html">
+								<img src="./img/aptisi/library/4.png" alt="">
+							</a>
+						</div>
+						<!-- <div class="causes-progress">
+							<div class="causes-progress-bar">
+								<div style="width: 87%;">
+									<span>87%</span>
+								</div>
+							</div>
+							<div>
+								<span class="causes-raised">Raised: <strong>52.000$</strong></span>
+								<span class="causes-goal">Goal: <strong>90.000$</strong></span>
+							</div>
+						</div> -->
+						<div class="causes-content">
+							<div style="height: 130px">
+								<h3><a href="buku1.html">Spatial Big Data Science</a></h3>
+							</div>
+							<a href="buku1.html" class="primary-button causes-donate">Unduh Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<!-- /causes -->
+
+				<!-- causes -->
+				<div class="col-md-4">
+					<div class="causes">
+						<div class="causes-img">
+							<a href="buku1.html">
+								<img src="./img/aptisi/library/5.jpg" alt="">
+							</a>
+						</div>
+						<!-- <div class="causes-progress">
+							<div class="causes-progress-bar">
+								<div style="width: 87%;">
+									<span>87%</span>
+								</div>
+							</div>
+							<div>
+								<span class="causes-raised">Raised: <strong>52.000$</strong></span>
+								<span class="causes-goal">Goal: <strong>90.000$</strong></span>
+							</div>
+						</div> -->
+						<div class="causes-content">
+							<div style="height: 130px">
+								<h3><a href="buku1.html">PHP, MySQOL, JavaScript & HTML5 All-In-One</a></h3>
+							</div>
+							<a href="buku1.html" class="primary-button causes-donate">Unduh Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<!-- /causes -->
+
+				<!-- causes -->
+				<div class="col-md-4">
+					<div class="causes">
+						<div class="causes-img">
+							<a href="buku1.html">
+									<img src="./img/aptisi/library/6.jpg" alt="">
+								</a>
+						</div>
+						<!-- <div class="causes-progress">
+							<div class="causes-progress-bar">
+								<div style="width: 87%;">
+									<span>87%</span>
+								</div>
+							</div>
+							<div>
+								<span class="causes-raised">Raised: <strong>52.000$</strong></span>
+								<span class="causes-goal">Goal: <strong>90.000$</strong></span>
+							</div>
+						</div> -->
+						<div class="causes-content">
+							<div style="height: 130px">
+								<h3><a href="buku1.html">How To Write a Better Thesis</a></h3>
+							</div>
+							<a href="buku1.html" class="primary-button causes-donate">Unduh Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<!-- /causes -->
+
+				<!-- section redirect -->
+				<div class="col-md-8 col-md-offset-2">
+					<div class="section-title text-center">
+						<a href="daftar-buku.html" class="secondary-button causes-donate">Telusuri Lebih lanjut</a>
+					</div>
+				</div>
+				<!-- section redirect -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<div class="consstyle"></div>
+	
+	<footer id="footer" class="section">
+		<div class="cons">
+			<div class="row">
+				<!-- <div class="col-md-4">
+					<div class="footer">
+						<div>
+							<h3 class="footer-title">Pengunjung</h3>
+							<p>Orang yang telah mengunjungi situs ini 98123 Orang</p>
+						</div>
+					</div>
+					<div class="footer">
+						<div>
+							<h3 class="footer-title">Komentar dalam Berita</h3>
+							<ul class="footer-ul">
+								<li class="footer-li">
+									<a href="berita1.html">Prof. Dr. Ir. Idiannor Mahyudin, M.Si on Kopertis XI Melakukan Dialog Pancasila Bersama Pimpinan PTS SeKalimantan Selatan dalam memperingati Hari Lahir Pancasila 1 Juni 2018.</a>
+								</li>
+								<li class="footer-li">
+									<a href="berita2.html">Final Grade Calculator on Seminar Nasional Multi Disiplin Ilmu-1</a>
+								</li>
+								<li class="footer-li">
+									<a href="berita3.html">Sofyana Bellaa on Membedah Tantangan Jokowi-JK</a>
+								</li>
+								<li class="footer-li">
+									<a href="berita4.html">Sofyana Bellaa on Kampus Harus Tingkatkan Inovasi Dalam Berkompetisi</a>
+								</li>
+								<li class="footer-li">
+									<a href="berita5.html">Admin on Pelatihan Pengembangan Keterampilan Dasar dalam Teknik Instruksional</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div> -->
+
+				<!-- <div class="col-md-4">
+					<div class="footer">
+						<h3 class="footer-title">Lokasi kami</h3>
+						<a href="https://bit.ly/2Gk3Qjx">
+							<img src="img/aptisi/maps.PNG" class="footer-maps">
+						</a>
+						<ul>
+							<p>Alamat : Jl. Kamal Raya Outer Ring Road Komplek Rukan Malibu Blok I No.75, Cengkareng, Jakarta Barat, DKI Jakarta, RT.7/RW.14, Cengkareng Tim., Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730</p>
+						</ul>
+						<ul>
+							<p>Hari : Senin – Jumat</p>
+						</ul>
+						<ul>
+							<p>Jam Kerja : 09:00 – 16:00</p>
+						</ul>
+						<ul>
+							<p>Telepon : (021) 56944914</p>
+						</ul>
+					</div>
+				</div> -->
+
+				<!-- <div class="col-md-4">
+					<div class="footer">
+						<h3 class="footer-title">Wilayah APTISI</h3>
+						<ul class="footer-ul">
+							<li class="footer-li"><a href="">- Wilayah-I A Sumatera Utara</a></li>
+							<li class="footer-li"><a href="">- Wilayah-I B Nanggroe Aceh Darussalam</a></li>
+							<li class="footer-li"><a href="">- Wilayah-II A Sumatera Selatan</a></li>
+							<li class="footer-li"><a href="">- Wilayah-II B Lampung</a></li>
+							<li class="footer-li"><a href="">- Wilayah-II C Bengkulu</a></li>
+							<li class="footer-li"><a href="">- Wilayah-III DKI Jakarta</a></li>
+							<li class="footer-li"><a href="">- Wilayah-IV A Jawa Barat</a></li>
+							<li class="footer-li"><a href="">- Wilayah-IV B Banten</a></li>
+							<li class="footer-li"><a href="">- Wilayah-V Daerah Istimewa Yogyakarta</a></li>
+							<li class="footer-li"><a href="">- Wilayah-VI Jawa Tengah</a></li>
+							<li class="footer-li"><a href="">- Wilayah-VII A Jawa Timur</a></li>
+							<li class="footer-li"><a href="">- Wilayah-VII B Bali</a></li>
+							<li class="footer-li"><a href="">- Wilayah-VIII A Nusa Tenggara Timur</a></li>
+							<li class="footer-li"><a href="">- Wilayah-VIII B Nusa Tenggara Barat</a></li>
+							<li class="footer-li"><a href="">- Wilayah-IX A Sulawesi</a></li>
+							<li class="footer-li"><a href="">- Wilayah-IX B Manado dan Gorontalo</a></li>
+							<li class="footer-li"><a href="">- Wilayah-X A Sumatera Barat</a></li>
+							<li class="footer-li"><a href="">- Wilayah-X B Riau</a></li>
+							<li class="footer-li"><a href="">- Wilayah-X C Jambi</a></li>
+							<li class="footer-li"><a href="">- Wilayah-X D Kepulauan Riau</a></li>
+							<li class="footer-li"><a href="">- Wilayah-XI A Kalimantan</a></li>
+							<li class="footer-li"><a href="">- Wilayah-XI B Kalimantan Timur</a></li>
+							<li class="footer-li"><a href="">- Wilayah-XII A Ambon dan Ternate</a></li>
+							<li class="footer-li"><a href="">- Wilayah-XII B Irian Jaya</a></li>
+							<li class="footer-li"><a href="">- Wilayah-XII C Papua Barat</a></li>
+						</ul>
+					</div>
+				</div> -->
+			</div>
+
+			<div id="footer-bottom" class="row">
+				<div class="col-md-6 col-md-push-6">
+					<ul class="footer-nav">
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="profil.html">Tentang</a></li>
+						<li><a href="galeri.html">Foto Dokumentasi</a></li>
+						<li><a href="kontak">Kontak</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 col-md-pull-6">
+					<div class="footer-copyright">
+						<span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://elecompsoftwarehouse.com/" target="_blank">Elecomp Software House</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
